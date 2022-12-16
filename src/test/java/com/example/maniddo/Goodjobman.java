@@ -13,8 +13,8 @@ public class Goodjobman {
     @Test
     public static void main(String[] args) {
         String[] MemberList = new String[]{"지영", "현수", "수린", "성은", "지수", "해선"};
-
-        List<Member> resultList = Pick.pickManiddo(MemberList);
+        String[] EmailList = new String[]{""};
+        List<Member> resultList = Pick.pickManiddo(MemberList, EmailList);
 
         for(int i = 0; i<resultList.size(); i++){
             System.out.println(resultList.get(i).getName() + "의 마니또는 "

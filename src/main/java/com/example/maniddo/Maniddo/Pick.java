@@ -28,14 +28,14 @@ public class Pick {
         }
         return tmp_member;
     }
-    public static List<Member> pickManiddo(String[] members){
+    public static List<Member> pickManiddo(String[] members, String[] email){
         //init
         MemberList = new ArrayList<>();
         MemberList2 = new ArrayList<>();
 
         //MemberList 만들기
         for(int i = 0; i<members.length; i++){
-            Member member = new Member((long) i,members[i]);
+            Member member = new Member((long) i,members[i],email[i]);
             MemberList.add(member);
             MemberList2.add(member);
         }
